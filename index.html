@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mytube</title>
+</head>
+
+<body>
+    <!-- --------------use FontAwesome icon -->
+
+    <nav>
+        <div class="nav-left">
+            <div class="bars">
+                <svg width="20" fill="black" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>bars</title>
+                        <path
+                            d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                </svg>
+                <div class="text">MyTube<sup>TH</sup></div>
+            </div>
+        </div>
+        <div class="nav-center">
+            <div class="search-box">
+                <input type="text" placeholder="ค้นหา">
+            </div>
+            <button class="search-button">
+                <svg width="15" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>search</title>
+                        <desc>Created with Sketch Beta.</desc>
+                        <defs> </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                            sketch:type="MSPage">
+                            <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-256.000000, -1139.000000)"
+                                fill="#000000">
+                                <path
+                                    d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
+                                    id="search" sketch:type="MSShapeGroup"> </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <button class="voice-search">
+                <svg width="20" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                    xml:space="preserve" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path fill="#231F20"
+                                d="M32,44c6.629,0,12-5.371,12-12V12c0-6.629-5.371-12-12-12S20,5.371,20,12v20C20,38.629,25.371,44,32,44z">
+                            </path>
+                            <path fill="#231F20"
+                                d="M52,28c-2.211,0-4,1.789-4,4c0,8.836-7.164,16-16,16s-16-7.164-16-16c0-2.211-1.789-4-4-4s-4,1.789-4,4 c0,11.887,8.656,21.73,20,23.641V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-4.359C47.344,53.73,56,43.887,56,32 C56,29.789,54.211,28,52,28z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <div class="nav-right">
+            <div class="create-video">
+                <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M9.5 9V15M6.5 12H12.5M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z"
+                            stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="notification">
+                <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.25 14.8125V10.4375C17.25 7.75125 15.8237 5.5025 13.3125 4.9075V4.3125C13.3125 3.58625 12.7263 3 12 3C11.2737 3 10.6875 3.58625 10.6875 4.3125V4.9075C8.185 5.5025 6.75 7.7425 6.75 10.4375V14.8125L5 16.5625V17.4375H19V16.5625L17.25 14.8125ZM12 20.0625C12.9625 20.0625 13.75 19.275 13.75 18.3125H10.25C10.25 19.275 11.0375 20.0625 12 20.0625ZM8.5 15.6875H15.5V10.4375C15.5 8.2675 14.1788 6.5 12 6.5C9.82125 6.5 8.5 8.2675 8.5 10.4375V15.6875Z"
+                            fill="#000000"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="profile">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VHXJmxfPfxwZDn6jaqdlQDe84_lzClSz8A&usqp=CAU">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="side-bar">
+            <div class="item-home">
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                            viewBox="0 0 24 24" width="24" focusable="false"
+                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                            <g>
+                                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="text">หน้าแรก</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                            focusable="false"
+                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                            <path
+                                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">Shorts</div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24"
+                            viewBox="0 0 24 24" width="24" focusable="false"
+                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                            <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">การติดตาม</div>
+                </div>
+                <div class="item-foryou">
+                    <div class="item">
+                        <div class="you-text">คุณ &gt; </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;"
+                                viewBox="0 0 24 24" width="24" focusable="false">
+                                <g>
+                                    <path
+                                        d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z">
+                                    </path>
+                                </g>
+                            </svg></div>
+                        <div class="text">ประวัติการเข้าชม</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"
+                                focusable="false"
+                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                <path
+                                    d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="text">ดูภายหลัง</div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                                height="24" viewBox="0 0 24 24" width="24" focusable="false"
+                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                <path
+                                    d="M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11H3v10h4h1h9.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z M7,20H4v-8h3V20z M19.98,13.17l-1.34,6 C18.54,19.65,18.03,20,17.43,20H8v-8.61l5.6-6.06C13.79,5.12,14.08,5,14.38,5c0.26,0,0.5,0.11,0.63,0.3 c0.07,0.1,0.15,0.26,0.09,0.47l-1.52,4.94L13.18,12h1.35h4.23c0.41,0,0.8,0.17,1.03,0.46C19.92,12.61,20.05,12.86,19.98,13.17z">
+                                </path>
+                            </svg></div>
+                        <div class="text">วีดีโอที่ชอบ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-section">
+                <div class="video-box">
+                    <img alt="" style="background-color: transparent;"
+                        class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded"
+                        src="https://i.ytimg.com/vi/80opvS2SGaY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCGT4BwVElK2RRx0uZg-ZFsnoFc-w">
+                </div>
+                <div class="content-box">
+                    <div class="channel">
+                        <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" width="36" src="https://yt3.ggpht.com/WpYojZv45ANJjQHxfFNZEi4NcIUfVPtfC13GN0BxfJfQdicxVgIn2ze06WsmtSpbTgPfR5aH=s68-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="description">
+                        <div class="top">Playing as *JOHN WICK* With The NEW Pencil Skin | The Finals Season 2</div>
+                        <div class="center">
+                            ottr gameplay
+                        </div>
+                        <div class="bottom">
+                            การดู 6.4 หมื่น ครั้ง . 2 สัปดาห์ที่ผ่านมา
+                        </div>
+                    </div>
+                    <div class="option"></div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="video-box">
+                    <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/GqzpqlA3kds/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBSJoKHqzNMiKRyvsdQrFHKvNTJDg">
+                </div>
+                <div class="content-box">
+                    <div class="channel">
+                        <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" width="36" src="https://yt3.ggpht.com/hjzalfvccsd4LrbSdyTgGf2I0wGZYGgJbre0Hw-_DAu5WslmK35xAePdPli7iMWrP57uLxYmVw=s68-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="description">
+                        <div class="top">API แบบครับ จบ ในคลิปเดียว</div>
+                        <div class="center">
+                            Dev อุ่นโครตโหด
+                        </div>
+                        <div class="bottom">
+                            การดู 101 ล้าน ครั้ง . 1 ชั่วโมงที่ผ่านมา
+                        </div>
+                    </div>
+                    <div class="option"></div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="video-box">
+                    <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/KV6jYhHRUxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDBDIAomwuegBa6wlhzrn4UstaxcQ">
+                </div>
+                <div class="content-box">
+                    <div class="channel">
+                        <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" width="48" src="https://yt3.ggpht.com/OmHFog0LnanNA6fBXyqOFUwrMXyq0tsJbxZZy9sFkleMr91lTU0imYQqGbAR31jZ4YIKx-480g=s68-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="description">
+                        <div class="top">I Unlocked 1,000 Hours On Ash...</div>
+                        <div class="center">
+                            Oddy at night
+                        </div>
+                        <div class="bottom">
+                            การดู 9.9 หมื่น ครั้ง . 1 สัปดาห์ที่ผ่านมา
+                        </div>
+                    </div>
+                    <div class="option"></div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="video-box">
+                    <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/WP_tGN44gaA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAJtWx9_t5_k5H0lh1a0YBN4ax3IQ">
+                </div>
+                <div class="content-box">
+                    <div class="channel"></div>
+                    <div class="description">
+                        <div class="top">THE FINALS TOURNAMENT ranked</div>
+                        <div class="center">
+                            Jomza007
+                        </div>
+                        <div class="bottom">
+                            การดู 1 แสน ครั้ง . 2 นาทีที่ผ่านมา
+                        </div>
+                    </div>
+                    <div class="option"></div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="video-box">
+                    <img alt="" style="background-color: transparent;" class="yt-core-image yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded" src="https://i.ytimg.com/vi/KV6jYhHRUxY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDBDIAomwuegBa6wlhzrn4UstaxcQ">
+                </div>
+                <div class="content-box">
+                    <div class="channel">
+                        <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="" width="48" src="https://yt3.ggpht.com/OmHFog0LnanNA6fBXyqOFUwrMXyq0tsJbxZZy9sFkleMr91lTU0imYQqGbAR31jZ4YIKx-480g=s68-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="description">
+                        <div class="top">I Unlocked 1,000 Hours On Ash...</div>
+                        <div class="center">
+                            Oddy at night
+                        </div>
+                        <div class="bottom">
+                            การดู 9.9 หมื่น ครั้ง . 1 สัปดาห์ที่ผ่านมา
+                        </div>
+                    </div>
+                    <div class="option"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
