@@ -40,11 +40,21 @@ main {
     height: 100%;
 }
 
+.bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 nav .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
 }
 
 nav sup {
@@ -53,6 +63,7 @@ nav sup {
 
 .nav-left .bars:hover {
     cursor: pointer;
+    background-color: rgb(229, 229, 229);
 }
 
 /* ---------------------------------------nav center */
@@ -64,7 +75,7 @@ nav sup {
 }
 
 .search-box {
-    width: 60%;
+    width: 45%;
     position: relative;
     display: flex;
     align-items: center;
@@ -90,6 +101,7 @@ nav sup {
     width: 64px;
     border-radius: 0 40px 40px 0;
     border: 1px solid rgb(176, 176, 176, 0.5);
+    cursor: pointer;
 }
 
 .nav-center .voice-search {
@@ -98,6 +110,7 @@ nav sup {
     border-radius: 50%;
     border: none;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 /* -------------------------------------------nav right */
@@ -230,11 +243,18 @@ nav sup {
     width: 100%;
 }
 
+.content-line {
+    /* border: 1px dashed; */
+    display: flex;
+    height: 350px;
+    flex-wrap: wrap;
+}
+
 .content-section {
     max-width: 400px;
     height: 350px;
     cursor: pointer;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .video-box {
@@ -246,16 +266,22 @@ nav sup {
 }
 
 .video-box img {
-    border-radius: 20px;
-    width: 402px;
+    border-radius: 10px;
+    width: 99%;
     height: 220px;
+    transition: all 0.2s ease;
+}
+
+.video-box  img:hover {
+    border-radius: 0;
+    transform: scale(1.009);
 }
 
 .content-box {
     gap: 8px;
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    /* height: 100px; */
 }
 
 .channel img{
